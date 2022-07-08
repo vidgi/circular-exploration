@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/circular-exploration/static/css/main.f422bed4.css",
+    "main.js": "/circular-exploration/static/js/main.dbe24e00.js",
+    "static/js/787.2c2ee11a.chunk.js": "/circular-exploration/static/js/787.2c2ee11a.chunk.js",
+    "static/media/deadening_exuberance.gif": "/circular-exploration/static/media/deadening_exuberance.0901e94186bf0343b3a5.gif",
+    "static/media/sculpted_and_forged.gif": "/circular-exploration/static/media/sculpted_and_forged.4021d119be49ca0ddc48.gif",
+    "static/media/reformations.png": "/circular-exploration/static/media/reformations.89326a6a491dc8bace0e.png",
+    "static/media/collectiblr.png": "/circular-exploration/static/media/collectiblr.aa8f44135cfb1745f662.png",
+    "static/media/suryanamaskar.png": "/circular-exploration/static/media/suryanamaskar.a713b28420b02e9e2708.png",
+    "static/media/fragmentations.jpg": "/circular-exploration/static/media/fragmentations.4a6c3b3675e9b0b3c01a.jpg",
+    "static/media/fertilizer.jpg": "/circular-exploration/static/media/fertilizer.d3c463ecf071f6a33818.jpg",
+    "static/media/days_amongst_trees.jpg": "/circular-exploration/static/media/days_amongst_trees.a7b13afe0f6d1be95eb4.jpg",
+    "static/media/resurrection_fern.jpg": "/circular-exploration/static/media/resurrection_fern.ca9919b5f75fa218c6f7.jpg",
+    "static/media/doodlebots.jpg": "/circular-exploration/static/media/doodlebots.2cc59987edf9d351bfcf.jpg",
+    "static/media/flamingo_watching.jpg": "/circular-exploration/static/media/flamingo_watching.a8e4541d4ac3f8a05817.jpg",
+    "static/media/inhale_exhale.jpg": "/circular-exploration/static/media/inhale_exhale.227f2383df07d86d0d91.jpg",
+    "index.html": "/circular-exploration/index.html",
+    "main.f422bed4.css.map": "/circular-exploration/static/css/main.f422bed4.css.map",
+    "main.dbe24e00.js.map": "/circular-exploration/static/js/main.dbe24e00.js.map",
+    "787.2c2ee11a.chunk.js.map": "/circular-exploration/static/js/787.2c2ee11a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f422bed4.css",
+    "static/js/main.dbe24e00.js"
+  ]
+}
