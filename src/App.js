@@ -3,7 +3,7 @@ import "./App.css";
 import { Suspense } from "react";
 
 import { Canvas } from "react-three-fiber";
-import { Trail, Loader, Html, OrbitControls } from "@react-three/drei";
+import { Loader, Html, OrbitControls } from "@react-three/drei";
 
 function App() {
   const imageData = [
@@ -48,7 +48,7 @@ function App() {
       title: "Days Amongst Trees",
       description: "f",
     },
-    { image: require("./img/fertilizer.jpg"), link: "https://vidyagiri.com/", title: "Fertilizer", description: "f" },
+    { image: require("./img/fertilizer.jpg"), link: "https://vidyagiri.com/fertilizer/", title: "Fertilizer", description: "f" },
   ];
 
   return (
@@ -56,55 +56,29 @@ function App() {
       <Canvas camera={{ fov: 75, position: [0, 9, 60] }} style={{ height: "100vh", width: "100vw" }}>
         <color attach="background" args={["white"]} />
 
-        {/* <Sky sunPosition={[200, -2, 1000]} rayleigh={3} inclination={0} azimuth={0.5} turbidity={20} /> */}
-        {/* <Stars radius={10} depth={50} count={10000} factor={4} saturation={0.5} fade speed={3} /> */}
-
         <Suspense fallback={null}>
           <group transform scale={[1, 1, 1]} position={[20, 0, -25]}>
-            <FeaturedImage position={[-5, 0, 51]} data={imageData[0]} rotation={[0 * (Math.PI / 180), -150 * (Math.PI / 180), 0]} />
-
-            <FeaturedImage position={[6, 0, 40]} data={imageData[1]} rotation={[0 * (Math.PI / 180), -120 * (Math.PI / 180), 0]} />
-
-            <FeaturedImage position={[10, 0, 25]} data={imageData[2]} rotation={[0 * (Math.PI / 180), -90 * (Math.PI / 180), 0]} />
-
-            <FeaturedImage position={[6, 0, 10]} data={imageData[3]} rotation={[0 * (Math.PI / 180), -60 * (Math.PI / 180), 0]} />
-
-            <FeaturedImage position={[-5, 0, -1]} data={imageData[4]} rotation={[0 * (Math.PI / 180), -30 * (Math.PI / 180), 0]} />
-
-            <FeaturedImage position={[-20, 0, -5]} data={imageData[5]} rotation={[0 * (Math.PI / 180), 0 * (Math.PI / 180), 0]} />
-
-            <FeaturedImage position={[-35, 0, -1]} data={imageData[6]} rotation={[0 * (Math.PI / 180), 30 * (Math.PI / 180), 0]} />
-
-            <FeaturedImage position={[-46, 0, 10]} data={imageData[7]} rotation={[0 * (Math.PI / 180), 60 * (Math.PI / 180), 0]} />
-
-            <FeaturedImage position={[-50, 0, 25]} data={imageData[8]} rotation={[0 * (Math.PI / 180), 90 * (Math.PI / 180), 0]} />
-
-            <FeaturedImage position={[-46, 0, 40]} data={imageData[9]} rotation={[0 * (Math.PI / 180), 120 * (Math.PI / 180), 0]} />
-
-            <FeaturedImage position={[-35, 0, 51]} data={imageData[10]} rotation={[0 * (Math.PI / 180), 150 * (Math.PI / 180), 0]} />
-
-            <FeaturedImage position={[-20, 0, 55]} data={imageData[11]} rotation={[0 * (Math.PI / 180), 180 * (Math.PI / 180), 0]} />
+            <FeaturedImage position={[-20, 0, 55]} data={imageData[0]} rotation={[0 * (Math.PI / 180), 180 * (Math.PI / 180), 0]} />
+            <FeaturedImage position={[-5, 0, 51]} data={imageData[1]} rotation={[0 * (Math.PI / 180), -150 * (Math.PI / 180), 0]} />
+            <FeaturedImage position={[6, 0, 40]} data={imageData[2]} rotation={[0 * (Math.PI / 180), -120 * (Math.PI / 180), 0]} />
+            <FeaturedImage position={[10, 0, 25]} data={imageData[3]} rotation={[0 * (Math.PI / 180), -90 * (Math.PI / 180), 0]} />
+            <FeaturedImage position={[6, 0, 10]} data={imageData[4]} rotation={[0 * (Math.PI / 180), -60 * (Math.PI / 180), 0]} />
+            <FeaturedImage position={[-5, 0, -1]} data={imageData[5]} rotation={[0 * (Math.PI / 180), -30 * (Math.PI / 180), 0]} />
+            <FeaturedImage position={[-20, 0, -5]} data={imageData[6]} rotation={[0 * (Math.PI / 180), 0 * (Math.PI / 180), 0]} />
+            <FeaturedImage position={[-35, 0, -1]} data={imageData[7]} rotation={[0 * (Math.PI / 180), 30 * (Math.PI / 180), 0]} />
+            <FeaturedImage position={[-46, 0, 10]} data={imageData[8]} rotation={[0 * (Math.PI / 180), 60 * (Math.PI / 180), 0]} />
+            <FeaturedImage position={[-50, 0, 25]} data={imageData[9]} rotation={[0 * (Math.PI / 180), 90 * (Math.PI / 180), 0]} />
+            <FeaturedImage position={[-46, 0, 40]} data={imageData[10]} rotation={[0 * (Math.PI / 180), 120 * (Math.PI / 180), 0]} />
+            <FeaturedImage position={[-35, 0, 51]} data={imageData[11]} rotation={[0 * (Math.PI / 180), 150 * (Math.PI / 180), 0]} />
           </group>
 
-          <Trail
-            width={0.2} // Width of the line
-            color={"hotpink"} // Color of the line
-            length={1} // Length of the line
-            decay={1} // How fast the line fades away
-            local={false} // Wether to use the target's world or local positions
-            stride={0} // Min distance between previous and current point
-            interval={1} // Number of frames to wait before next calculation
-            // target={undefined} // Optional target. This object will produce the trail.
-            attenuation={(width) => width} // A function to define the width in each point along it.
-          >
-            {/* <mesh>
+          {/* <mesh>
               <sphereGeometry />
               <meshBasicMaterial />
             </mesh> */}
-          </Trail>
         </Suspense>
         <ambientLight />
-        <OrbitControls enablePan={false} minDistance={5} maxDistance={100} autoRotate={true} autoRotateSpeed={0.4} />
+        <OrbitControls enablePan={false} minDistance={5} maxDistance={100} autoRotate={true} autoRotateSpeed={-0.4} />
       </Canvas>
       <Loader />
     </div>
