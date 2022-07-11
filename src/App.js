@@ -44,8 +44,8 @@ function App() {
     },
     {
       image: require("./img/days_amongst_trees.jpg"),
-      link: "https://vidyagiri.com/days-amongst-trees/",
-      title: "Days Amongst Trees",
+      link: "https://vidyagiri.com/landscapes/",
+      title: "Landscapes",
       description: "f",
     },
     { image: require("./img/fertilizer.jpg"), link: "https://vidyagiri.com/fertilizer/", title: "Fertilizer", description: "f" },
