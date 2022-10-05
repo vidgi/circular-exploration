@@ -7,48 +7,18 @@ import { Loader, Html, OrbitControls } from "@react-three/drei";
 
 function App() {
   const imageData = [
-    { image: require("./img/suryanamaskar.png"), link: "https://vidyagiri.com/suryanamaskar/", title: "suryanamaskar", description: "f" },
-    { image: require("./img/collectiblr.png"), link: "https://vidyagiri.com/collectiblr/", title: "collectiblr", description: "f" },
-    {
-      image: require("./img/sculpted_and_forged.gif"),
-      link: "https://vidyagiri.com/sculpted-and-forged/",
-      title: "Sculpted in Our Image, Forged in Our Minds",
-      description: "f",
-    },
-    { image: require("./img/reformations.png"), link: "https://vidyagiri.com/reformations/", title: "Reformations", description: "f" },
-    {
-      image: require("./img/fragmentations.jpg"),
-      link: "https://vidyagiri.com/fragmentations/",
-      title: "Fragmentations",
-      description: "f",
-    },
-    {
-      image: require("./img/resurrection_fern.jpg"),
-      link: "https://vidyagiri.com/resurrection-fern/",
-      title: "Resurrection Fern",
-      description: "f",
-    },
-    { image: require("./img/inhale_exhale.jpg"), link: "https://vidyagiri.com/inhale-exhale/", title: "Inhale/Exhale", description: "f" },
-    { image: require("./img/doodlebots.jpg"), link: "https://vidyagiri.com/doodlebots/", title: "Doodlebots", description: "f" },
-    {
-      image: require("./img/flamingo_watching.jpg"),
-      link: "https://vidyagiri.com/flamingo-watching/",
-      title: "Flamingo Watching",
-      description: "f",
-    },
-    {
-      image: require("./img/deadening_exuberance.gif"),
-      link: "https://vidyagiri.com/deadening-exuberance/",
-      title: "Deadening Exuberance",
-      description: "f",
-    },
-    {
-      image: require("./img/days_amongst_trees.jpg"),
-      link: "https://vidyagiri.com/landscapes/",
-      title: "Landscapes",
-      description: "f",
-    },
-    { image: require("./img/fertilizer.jpg"), link: "https://vidyagiri.com/fertilizer/", title: "Fertilizer", description: "f" },
+    { image: require("./img/baby-snapdragon.png"), description: "f" },
+    { image: require("./img/babys-breath.png"), description: "f" },
+    { image: require("./img/bachelor-button.png"), description: "f" },
+    { image: require("./img/black-eyed-susan.png"), description: "f" },
+    { image: require("./img/blue-eyed-grass.png"), description: "f" },
+    { image: require("./img/blue-flax.png"), description: "f" },
+    { image: require("./img/candy-tuft.png"), description: "f" },
+    { image: require("./img/clasping-coneflower.png"), description: "f" },
+    { image: require("./img/drummond-phlox.png"), description: "f" },
+    { image: require("./img/lemon-bee-balm.png"), description: "f" },
+    { image: require("./img/scarlet-sage.png"), description: "f" },
+    { image: require("./img/showy-primrose.png"), description: "f" },
   ];
 
   return (
@@ -78,7 +48,7 @@ function App() {
             </mesh> */}
         </Suspense>
         <ambientLight />
-        <OrbitControls enablePan={false} minDistance={5} maxDistance={100} autoRotate={true} autoRotateSpeed={-0.4} />
+        <OrbitControls enablePan={false} minDistance={5} maxDistance={200} autoRotate={true} autoRotateSpeed={-0.4} />
       </Canvas>
       <Loader />
     </div>
@@ -91,10 +61,10 @@ function FeaturedImage(props) {
   return (
     <>
       <Html transform position={props.position} rotation={props.rotation}>
-        <a href={props.data.link} target="_blank" rel="noreferrer">
-          <img src={props.data.image} alt="thumbnail" width="640" height="400" />
-        </a>
-        <p className="flip">{props.data.title}</p>
+        {/* <a href={props.data.link} target="_blank" rel="noreferrer"> */}
+        <img src={props.data.image} alt="thumbnail" width="550" height="700" />
+        {/* </a> */}
+        {/* <p className="flip">{props.data.title}</p> */}
       </Html>
     </>
   );
