@@ -51,9 +51,19 @@ function App() {
   ];
   imageData = shuffle(imageData);
 
+  var viewportData = [
+    [0, 10, 60],
+    [0, -50, 15],
+    [0, -20, 20],
+    [0, 20, 30],
+    [0, -30, 10],
+  ];
+  viewportData = shuffle(viewportData);
+
   return (
     <div className="App">
-      <Canvas camera={{ fov: 75, position: [0, 10, 60] }} style={{ height: "100vh", width: "100vw" }}>
+      {/* <Canvas camera={{ fov: 75, position: [0, -30, 10] }} style={{ height: "100vh", width: "100vw" }}> */}
+      <Canvas camera={{ fov: 75, position: viewportData[0] }} style={{ height: "100vh", width: "100vw" }}>
         <color attach="background" args={["white"]} />
 
         <Suspense fallback={null}>
