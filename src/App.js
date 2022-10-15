@@ -53,7 +53,7 @@ function App() {
 
   return (
     <div className="App">
-      <Canvas camera={{ fov: 75, position: [0, -20, 60] }} style={{ height: "100vh", width: "100vw" }}>
+      <Canvas camera={{ fov: 75, position: [0, 10, 35] }} style={{ height: "100vh", width: "100vw" }}>
         <color attach="background" args={["white"]} />
 
         <Suspense fallback={null}>
