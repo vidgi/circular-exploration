@@ -53,7 +53,7 @@ function App() {
 
   return (
     <div className="App">
-      <Canvas camera={{ fov: 75, position: [0, 10, 35] }} style={{ height: "100vh", width: "100vw" }}>
+      <Canvas camera={{ fov: 75, position: [0, 10, 60] }} style={{ height: "100vh", width: "100vw" }}>
         <color attach="background" args={["white"]} />
 
         <Suspense fallback={null}>
@@ -92,7 +92,7 @@ function App() {
             </mesh> */}
         </Suspense>
         <ambientLight />
-        <OrbitControls enablePan={false} minDistance={5} maxDistance={200} autoRotate={true} autoRotateSpeed={-0.4} />
+        <OrbitControls enablePan={false} minDistance={5} maxDistance={200} autoRotate={true} autoRotateSpeed={0.8} />
       </Canvas>
       <Loader />
     </div>
