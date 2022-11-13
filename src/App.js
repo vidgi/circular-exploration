@@ -24,32 +24,33 @@ function shuffle(array) {
 
 function App() {
   var imageData = [
-    { image: require("./img/baby-snapdragon.png"), description: "baby snapdragon" },
-    { image: require("./img/babys-breath.png"), description: "baby's breath" },
-    { image: require("./img/bachelor-button.png"), description: "bachelor button" },
+    { image: require("./img/scarlet-flax.png"), description: "scarlet flax" },
+    // { image: require("./img/corn-poppy.png"), description: "corn poppy" },
+    { image: require("./img/indian-blanket.png"), description: "indian blanket" },
+    { image: require("./img/indian-paintbrush.png"), description: "baby snapdragon" },
+    // { image: require("./img/clasping-coneflower.png"), description: "clasping coneflower" },
     { image: require("./img/black-eyed-susan.png"), description: "black-eyed susan" },
-    // { image: require("./img/blue-eyed-grass.png"), description: "blue-eyed grass" },
+    // { image: require("./img/lance-leaved-coreopsis.png"), description: "lance-leaved coreopsis" },
+    { image: require("./img/evening-primrose.png"), description: "evening primrose" },
     { image: require("./img/blue-flax.png"), description: "blue flax" },
+    { image: require("./img/bachelor-button.png"), description: "bachelor button" },
+    { image: require("./img/texas-bluebonnet.png"), description: "texas bluebonnet" },
+    { image: require("./img/baby-snapdragon.png"), description: "baby snapdragon" },
+    { image: require("./img/showy-primrose.png"), description: "showy primrose" },
+
+    { image: require("./img/babys-breath.png"), description: "baby's breath" },
     { image: require("./img/candy-tuft.png"), description: "candy tuft" },
-    { image: require("./img/clasping-coneflower.png"), description: "clasping coneflower" },
+    // { image: require("./img/white-yarrow.png"), description: "white yarrow" },
+    // { image: require("./img/blue-eyed-grass.png"), description: "blue-eyed grass" },
     // { image: require("./img/drummond-phlox.png"), description: "drummond phlox" },
     // { image: require("./img/lemon-bee-balm.png"), description: "lemon bee balm" },
     // { image: require("./img/scarlet-sage.png"), description: "scarlet sage" },
-    { image: require("./img/showy-primrose.png"), description: "showy primrose" },
-    { image: require("./img/indian-paintbrush.png"), description: "baby snapdragon" },
-    { image: require("./img/texas-bluebonnet.png"), description: "texas bluebonnet" },
     // { image: require("./img/sweet-alyssum.png"), description: "sweet alyssum" },
     // { image: require("./img/mexican-hat.png"), description: "mexican hat" },
     // { image: require("./img/plains-coreopsis.png"), description: "plains coreopsis" },
-    { image: require("./img/lance-leaved-coreopsis.png"), description: "lance-leaved coreopsis" },
-    { image: require("./img/indian-blanket.png"), description: "indian blanket" },
-    { image: require("./img/evening-primrose.png"), description: "evening primrose" },
-    { image: require("./img/corn-poppy.png"), description: "corn poppy" },
     // { image: require("./img/purple-coneflower.png"), description: "purple coneflower" },
-    { image: require("./img/scarlet-flax.png"), description: "scarlet flax" },
-    { image: require("./img/white-yarrow.png"), description: "white yarrow" },
   ];
-  imageData = shuffle(imageData);
+  // imageData = shuffle(imageData);
 
   var viewportData = [
     [0, 10, 60],
