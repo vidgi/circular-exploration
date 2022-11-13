@@ -28,24 +28,24 @@ function App() {
     { image: require("./img/babys-breath.png"), description: "baby's breath" },
     { image: require("./img/bachelor-button.png"), description: "bachelor button" },
     { image: require("./img/black-eyed-susan.png"), description: "black-eyed susan" },
-    { image: require("./img/blue-eyed-grass.png"), description: "blue-eyed grass" },
+    // { image: require("./img/blue-eyed-grass.png"), description: "blue-eyed grass" },
     { image: require("./img/blue-flax.png"), description: "blue flax" },
     { image: require("./img/candy-tuft.png"), description: "candy tuft" },
     { image: require("./img/clasping-coneflower.png"), description: "clasping coneflower" },
-    { image: require("./img/drummond-phlox.png"), description: "drummond phlox" },
-    { image: require("./img/lemon-bee-balm.png"), description: "lemon bee balm" },
-    { image: require("./img/scarlet-sage.png"), description: "scarlet sage" },
+    // { image: require("./img/drummond-phlox.png"), description: "drummond phlox" },
+    // { image: require("./img/lemon-bee-balm.png"), description: "lemon bee balm" },
+    // { image: require("./img/scarlet-sage.png"), description: "scarlet sage" },
     { image: require("./img/showy-primrose.png"), description: "showy primrose" },
     { image: require("./img/indian-paintbrush.png"), description: "baby snapdragon" },
     { image: require("./img/texas-bluebonnet.png"), description: "texas bluebonnet" },
-    { image: require("./img/sweet-alyssum.png"), description: "sweet alyssum" },
-    { image: require("./img/mexican-hat.png"), description: "mexican hat" },
-    { image: require("./img/plains-coreopsis.png"), description: "plains coreopsis" },
+    // { image: require("./img/sweet-alyssum.png"), description: "sweet alyssum" },
+    // { image: require("./img/mexican-hat.png"), description: "mexican hat" },
+    // { image: require("./img/plains-coreopsis.png"), description: "plains coreopsis" },
     { image: require("./img/lance-leaved-coreopsis.png"), description: "lance-leaved coreopsis" },
     { image: require("./img/indian-blanket.png"), description: "indian blanket" },
     { image: require("./img/evening-primrose.png"), description: "evening primrose" },
     { image: require("./img/corn-poppy.png"), description: "corn poppy" },
-    { image: require("./img/purple-coneflower.png"), description: "purple coneflower" },
+    // { image: require("./img/purple-coneflower.png"), description: "purple coneflower" },
     { image: require("./img/scarlet-flax.png"), description: "scarlet flax" },
     { image: require("./img/white-yarrow.png"), description: "white yarrow" },
   ];
@@ -82,7 +82,7 @@ function App() {
             <FeaturedImage position={[-35, 0, 51]} data={imageData[11]} rotation={[0 * (Math.PI / 180), 150 * (Math.PI / 180), 0]} />
           </group>
 
-          <group transform scale={[0.75, 0.75, 0.75]} position={[15, 0, -19]}>
+          {/* <group transform scale={[0.75, 0.75, 0.75]} position={[15, 0, -19]}>
             <FeaturedImage position={[-20, 10, 55]} data={imageData[12]} rotation={[0 * (Math.PI / 180), 180 * (Math.PI / 180), 0]} />
             <FeaturedImage position={[-5, 10, 51]} data={imageData[13]} rotation={[0 * (Math.PI / 180), -150 * (Math.PI / 180), 0]} />
             <FeaturedImage position={[6, 10, 40]} data={imageData[14]} rotation={[0 * (Math.PI / 180), -120 * (Math.PI / 180), 0]} />
@@ -95,7 +95,7 @@ function App() {
             <FeaturedImage position={[-50, 10, 25]} data={imageData[21]} rotation={[0 * (Math.PI / 180), 90 * (Math.PI / 180), 0]} />
             <FeaturedImage position={[-46, 10, 40]} data={imageData[22]} rotation={[0 * (Math.PI / 180), 120 * (Math.PI / 180), 0]} />
             <FeaturedImage position={[-35, 10, 51]} data={imageData[23]} rotation={[0 * (Math.PI / 180), 150 * (Math.PI / 180), 0]} />
-          </group>
+          </group> */}
           {/* <mesh>
               <sphereGeometry />
               <meshBasicMaterial />
